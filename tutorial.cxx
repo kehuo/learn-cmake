@@ -6,6 +6,8 @@
 // after running build.sh, the header file will be in the build/TutorialConfig.h
 #include "TutorialConfig.h"
 
+#include "MathFunctions.h"
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         // report version
@@ -22,7 +24,7 @@ int main(int argc, char* argv[]) {
     // supported by C++ 11 and above.
     const double inputValue = std::stod(argv[1]);
     
-    const double outputValue = sqrt(inputValue);
+    const double outputValue = mysqrt(inputValue);
     std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
     return 0;
