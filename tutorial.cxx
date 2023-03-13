@@ -9,7 +9,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    const double inputValue = atof(argv[1]);
+    // supported by C++ 11 and above.
+    const double inputValue = std::stod(argv[1]);
     
     const double outputValue = sqrt(inputValue);
     std::cout << "The square root of " << inputValue << " is " << outputValue
