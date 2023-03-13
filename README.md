@@ -11,6 +11,6 @@ Each exercise in this step will start with some background information. Then, a 
 Also note that each step in the tutorial builds on the next. So, for example, the starting code for Step2 is the complete solution to Step1.
 
 
-#### Exercise 2 - Building a Basic Project
+#### Exercise 3 - Adding a Version Number and Configured Header File
 
-https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#exercise-2-specifying-the-c-standard
+https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#exercise-3-adding-a-version-number-and-configured-header-file
