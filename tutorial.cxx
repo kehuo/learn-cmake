@@ -3,10 +3,11 @@
 #include <iostream>
 #include <string>
 
-// after running build.sh, the header file will be in the build/TutorialConfig.h
 #include "TutorialConfig.h"
 
-#include "MathFunctions.h"
+#ifdef USE_MYMATH
+#   include "MathFunctions.h"
+#endif
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
@@ -24,7 +25,14 @@ int main(int argc, char* argv[]) {
     // supported by C++ 11 and above.
     const double inputValue = std::stod(argv[1]);
     
+#ifdef USE_MYMATH
+    std::cout << "USE_MYMATH=ON, use mysqrt" << std::endl;
     const double outputValue = mysqrt(inputValue);
+#else
+    std::cout << "USE_MYMATH=OFF, use sqrt" << std::endl;
+    const double outputValue = sqrt(inputValue);
+#endif
+
     std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
     return 0;
