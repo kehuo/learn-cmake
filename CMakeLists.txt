@@ -44,3 +44,9 @@ target_include_directories(
     Tutorial PUBLIC
     "${PROJECT_BINARY_DIR}"
 )
+
+install(TARGETS Tutorial DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  DESTINATION include
+  )
+  
